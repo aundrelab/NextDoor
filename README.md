@@ -6,7 +6,7 @@ Coded and designed by: **Prince Rios, Alex Espinoza Fuentes, Eric Chavez Velez, 
 
 The following functionality is completed:
 
-# this is a template, will change
+this is a template, will change
 * [x] User can **view a list of all usable filters**
 * [x] User can **successfully use a functioning microphone button** to ask for desired filter to use
 * [x] User's **list of items persisted** upon modification and and retrieved properly on app restart
