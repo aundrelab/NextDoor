@@ -15,6 +15,17 @@ app = Flask(__name__)
 food_drive_dic = (FoodDrive().find_food_drive())
 wifi_dic = (Wifi().find_wifi())
 geolocator = Nominatim(user_agent="myGeocoder")
+ 
+
+wifi_coordinates = []
+for key, value in wifi_dic.items():
+	loc1 = geolocator.geocode(value)
+	if(loc1):
+		lat = loc1.latitude
+		lng = loc1.longitude
+		wifi_coordinates.append((key,value,lat,lng))
+# print(wifi_coordinates)
+
 
 food_drive_coordinates = []
 del food_drive_dic['Henry F. Kammann Elementary']
@@ -25,23 +36,10 @@ for key, value in food_drive_dic.items():
 
 	food_drive_coordinates.append((key,value,lat,lng))
 
+# print(food_drive_coordinates)
 
-# Need to get wifi coodinates to work
-# **********************************
-
-# What we couldn't get to work
-
-# wifi_coordinates = []
-# for key, value in wifi_dic.items():
-# 	loc = geolocator.geocode1(value)
-# 	if(loc):
-# 		lat = loc.latitude
-# 		lng = loc.longitude
-# 		wifi_coordinates.append((value,lat,lng))
-
-# print(wifi_coordinates)
-
+total_resources = food_drive_coordinates + wifi_coordinates
 
 @app.route('/')
 def index():
-    return render_template("map.html", places=food_drive_coordinates)
+    return render_template("map.html", places=total_resources)
