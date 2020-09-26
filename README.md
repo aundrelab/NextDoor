@@ -1,6 +1,8 @@
 # NextDoor
 > NextDoor is a web app that helps find food drives and free wifi locations for those who lack the resources.
 
+<img src="https://github.com/aundrelab/NextDoor/blob/master/walkthorugh_part1.gif?raw=true" width=250><br>
+
 This web application allows the user to use the resources offered to them to improve remote learning. The site is targeted more towards kids who lack basic resources to simulate a learning environment at home. Two barriers that students face while learning remotely are that they do not have the proper technology to work and learn. In addition, some students rely on school lunches because their families face economical and financial problems and school lunch is always a solution to help. Our web application displays a map of different locations that offer these resources. For example, there are some schools that offer 1 meal every day to students for free. Also, there are other locations that offer free wifi use since some students do not have a good connection at home.
 
 ## Installation
