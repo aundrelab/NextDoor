@@ -1,36 +1,64 @@
 # NextDoor
+> NextDoor is a web app that helps find food drives and free wifi locations for those who lack the resources.
 
-**NextDoor** is a web application where users can 
+[![NPM Version][npm-image]][npm-url]
+[![Build Status][travis-image]][travis-url]
+[![Downloads Stats][npm-downloads]][npm-url]
 
-Coded and designed by: **Prince Rios, Alex Espinoza Fuentes, Eric Chavez Velez, Edward Cluster & Aundre Labrador**
+This web application allows the user to use the resources offered to them to improve remote learning. The site is targeted more towards kids who lack basic resources to simulate a learning environment at home. Two barriers that students face while learning remotely are that they do not have the proper technology to work and learn. In addition, some students rely on school lunches because their families face economical and financial problems and school lunch is always a solution to help. Our web application displays a map of different locations that offer these resources. For example, there are some schools that offer 1 meal every day to students for free. Also, there are other locations that offer free wifi use since some students do not have a good connection at home.
 
-The following functionality is completed:
+## Installation
 
-this is a template, will change
-* [x] User can **view a list of all usable filters**
-* [x] User can **successfully use a functioning microphone button** to ask for desired filter to use
-* [x] User's **list of items persisted** upon modification and and retrieved properly on app restart
-* [x] User can **tap a random button that generates a random filter** if they don't have 
-* [x] and more!
+OS X & Linux:
 
-## Video Walkthrough
+```sh
+git clone https://github.com/aundrelab/NextDoor.git
+```
 
-Here's a walkthrough of our NextDoor Application:
+## Development Setup 
+Make sure to have an environments when downloading these libraries needed. 
 
-<img src=''>
+Flask/render_template:
+```sh
+pip install Flask
+```
 
-## License
+Nominatim/geocoders/geopy:
+```sh
+pip install geopy
+```
 
-    Copyright [2020] [Aundre Labrador, Prince Rios, Eric Chavez, Alex Fuentes, Edward Cluster]
+BeautifulSoup:
+```sh
+pip install bs4
+```
 
-    Licensed under the Apache License, Version 2.0 (the "License");
-    you may not use this file except in compliance with the License.
-    You may obtain a copy of the License at
+urlopen:
+```sh
+pip install urllib.request
+```
 
-        http://www.apache.org/licenses/LICENSE-2.0
+## Usage example
 
-    Unless required by applicable law or agreed to in writing, software
-    distributed under the License is distributed on an "AS IS" BASIS,
-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and
-    limitations under the License.
+During the current times of Covid-19 and online learning, many people lack the basic necessities to be able to live and get a education. That is why we created a map that shows locations of both free wifi spots and food in Salinas, Ca. The user can scroll around the map and they will find pins of different wifi spots and food drives happening. The names and address of the places will also be available if needed. 
+
+## Release History
+
+* 0.0.1
+    * Created: displayed pins on maps of scrapped data
+    * Work in progress
+
+## Contributors
+
+* Aundre Labrador – [Github](https://github.com/AlexFue) – [Linkedin](https://www.linkedin.com/in/aundrelabrador/)
+* Alex Espinoza-Fuentes – [Github](https://github.com/aundrelab) – [Linkedin](https://www.linkedin.com/in/alex-espinoza-fuentes/)
+* Edward Cluster – [Github](https://github.com/ecluster) – [Linkedin](https://www.linkedin.com/in/edward-cluster/)
+* Prince Rios – [Github](https://github.com/princeriostheprodigy) – [Linkedin](https://www.linkedin.com/in/prince-rios-511639194/)
+* Eric Chavez – [Github](https://github.com/ericchavez831) – [Linkedin](https://www.linkedin.com/in/echavezvelez/)
+
+## Contributing
+
+1. Fork it at (https://github.com/aundrelab/NextDoor.git)
+2. Commit your changes (`git commit -m 'Add comment'`)
+3. Push to the branch (`git push origin master`)
+4. Create a new Pull Request
