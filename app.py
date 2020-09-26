@@ -1,4 +1,4 @@
-# Developers: Aundre Labrador, Edward Cluster, Prince Rios, Eric Chavez
+# Developers: Aundre Labrador, Edward Cluster, Prince Rios, Eric Chavez, Alex Espinoza-Fuentes
 from flask import Flask, render_template
 
 app = Flask(__name__)
